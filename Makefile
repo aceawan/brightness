@@ -2,11 +2,14 @@ DC ?= dmd
 IDC ?= rdmd
 NAME ?= brightness
 
-$(name): $(name).d
-	$(DC) $(name).d
+$(name): brightness.d
+	$(DC) brightness.d
 
-run: $(name).d
-	$(IDC) $(name).d
+run: brightness.d
+	$(IDC) brightness.d
+
+unittest: brightness.d
+	$(DC) -unittest brightness.d
 
 clean:
-	rm $(name) $(name).o
+	rm brightness brightness.o
