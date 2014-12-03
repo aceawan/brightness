@@ -1,4 +1,4 @@
 brightness
 ==========
 
-Control asus laptop brightness
+Control asus laptop  keyboard brightness
